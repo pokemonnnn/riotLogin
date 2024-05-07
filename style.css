@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Mark W05 Medium";
+    src: url("https://db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot");
+    src: url("https://db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff2")
+            format("woff2"),
+        url("https://db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.ttf")
+            format("truetype"),
+        url("https://db.onlinewebfonts.com/t/b621d1ffb46493164fd62fb7a83ab0ff.svg#Mark W05 Medium")
+            format("svg");
+}
+body {
+    background: url("riot.jpg");
+}
+
+.container {
+    position: relative;
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-button {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-button a {
+    margin: 50px 15px;
+    text-decoration: none;
+    font-family: "Mark W05 Medium";
+    color: white;
+    font-weight: bold;
+}
+
+.container-form {
+    width: 50%;
+    left: 0%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    column-gap: 10%;
+    height: 100dvh;
+    background-image: url("rGames.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    background-color: #141414;
+}
+
+.container-form::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+}
+
+.container-form::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid white; */
+    background: linear-gradient(-90deg, rgba(20, 20, 20, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 30%;
+    transition: 0.5s ease-in-out;
+    width: 50%;
+    font-family: "Mark W05 Medium";
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.left h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.left {
+    left: 20%;
+    padding: 50px 50px 30px 50px;
+}
+
+.float-input {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    padding: 0px 0px 10px 10px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.float-input label {
+    left: 2%;
+    top: 20%;
+    color: #7a7a7a;
+}
+
+.float-input span {
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    font-size: 10px;
+}
+
+.float-input input {
+    width: 100%;
+    margin: 22px 0px 0px 0px;
+    border: none;
+    outline: none;
+    z-index: 3;
+    background-color: #f1f1f1;
+}
+
+.right {
+    right: -80%;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.submit-button button {
+    border: 2px solid #eaeaea;
+    padding: 20px;
+    border-radius: 20px;
+    background: none;
+}
+
+.sign-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.button-list button {
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.facebook {
+    background-color: #0966de;
+}
+
+.button-list .google {
+    background-color: white;
+    border: 2px solid #eaeaea;
+}
+
+.apple {
+    background-color: black;
+}
+
+.xbox {
+    background-color: #076907;
+}
+
+.footer-login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.footer-login a {
+    color: #5e5e5e;
+    text-decoration: none;
+}
